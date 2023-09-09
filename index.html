@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Weather Application</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="normal.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="title">Weather Application</h1>
+  <div class="card">
+    <form class="search-container" id="search-container">
+      <input class="searchh" type="text" id="location" placeholder="search">
+      <button type="submit" class="btn-search btn" id="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+    <div class="img-container" id="img-container">
+      <img src="./imagesw/176.webp" class='icon' id="icon" alt="">
+    </div>
+    <h1 class="temp" id="temp"></h1>
+    <p id="climate"></p>
+    <h2 class="place" id="place"></h2>
+    <div class="bottom-container">
+      <div class="humidity-container">
+        <p class="humidity"><i class="fa-solid fa-droplet"></i> <span id="humidity">64</span> %</p>
+        <p class="humidity-title">humidity</p>
+      </div>
+      <div class="wind-container">
+        <p class="wind"><i class="fa-solid fa-wind"></i> <span id="wind">18</span> km/h</p>
+        <p class="wind-title">wind-speed</p>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
